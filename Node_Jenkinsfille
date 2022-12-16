@@ -60,7 +60,7 @@ pipeline{
     stage('Docker Build'){
         steps{
 			dockerstatus()
-            sh "docker build . -t nrbaskar/hariapp:${Docker_TAG}"   
+            sh "docker build . -t nrbaskar/nodejeapp:${Docker_TAG}"   
         }
     }
     stage('Dockerhub Push'){
@@ -70,7 +70,7 @@ pipeline{
                 sh "docker login -u nrbaskar -p ${dockerHubPwd}"
             }
             
-            sh "docker push nrbaskar/hariapp:${Docker_TAG}"
+            sh "docker push nrbaskar/nodejeapp:${Docker_TAG}"
         }
     }
 	
