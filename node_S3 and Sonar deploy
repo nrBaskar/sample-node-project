@@ -41,7 +41,7 @@
         dest: "{{ dest_path }}"
     #Copy Files
     - amazon.aws.s3_bucket:
-    name: S3Zip_Bucket
+      name: S3Zip_Bucket
 	copy:
 	source: /var/lib/jenkins/workspace/S3Zip_Bucket
 	dest: "{{ dest_path }}/S3Zip_Bucket.zip"
