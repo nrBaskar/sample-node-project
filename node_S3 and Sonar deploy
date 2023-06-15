@@ -43,9 +43,9 @@
     - amazon.aws.s3_bucket:
       name: S3Zip_Bucket
 	copy:
-	source: /var/lib/jenkins/workspace/S3Zip_Bucket
+	source: aws s3 s3://node555-s3bucket/S3Zip_Bucket.zip
 	dest: "{{ dest_path }}/S3Zip_Bucket.zip"
-    state: present
+        state: present
     # Install NodeJS library
     # using multiple shell commands
     - name: Install Nodejs & ExpressJS
