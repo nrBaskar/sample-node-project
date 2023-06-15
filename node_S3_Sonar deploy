@@ -42,8 +42,8 @@
     #Copy Files
     - amazon.aws.s3_bucket:
     - name: node555-s3bucket
+      source: aws s3 s3://node555-s3bucket/S3Zip_Bucket.zip
       copy:
-	source: aws s3 s3://node555-s3bucket/S3Zip_Bucket.zip
 	dest: "{{ dest_path }}/S3Zip_Bucket.zip"
         state: present
     # Install NodeJS library
