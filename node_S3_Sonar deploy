@@ -42,7 +42,7 @@
     #Copy Files
     - amazon.aws.s3_bucket:
     - name: Copy Files
-      shell: ' cd "{{ dest_path }}" && aws s3 cp s3://node555-s3bucket/S3Zip_Bucket.zip .
+      shell: shell: ' cd "{{ dest_path }}" && aws s3 cp s3://node555-s3bucket/S3Zip_Bucket.zip . '
     # Install NodeJS library
     # using multiple shell commands
     - name: Install Nodejs & ExpressJS
