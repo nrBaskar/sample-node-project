@@ -10,7 +10,7 @@
     # Install python pip
     - name: Install python pip
       apt:
-        name: python-pip
+        name: python3-pip
         state: present
     # Install docker service 
     - name: Install docker
