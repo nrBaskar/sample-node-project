@@ -54,6 +54,11 @@
       apt:
         name: nodejs
         state: present
+    # npm module installation
+    - name: Npm installation
+      apt:
+        name: npm
+        state: present
     - name: Install Expressjs
       command: sudo npm install express
     # Install all the necessary Node modules for the project,
