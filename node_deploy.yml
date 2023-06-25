@@ -5,16 +5,16 @@
   become: True
   vars:
     repo_path: nrbaskar/nodejeapp:{{DOCKER_TAG}}
-    dest_path: /home/ec2-user/{{DOCKER_TAG}}
+    dest_path: /home/devsecops/{{DOCKER_TAG}}
   tasks:
     # Install python pip
     - name: Install python pip
-      yum:
+      apt:
         name: python-pip
         state: present
     # Install docker service 
     - name: Install docker
-      yum:
+      apt:
         name: docker
         state: present
     # Start the docker service
@@ -51,7 +51,7 @@
     # If other package are required mention the package name in "name"
     # eg: ngix, curl, wget, apache2, nodejs
     - name: Install reqired packages
-      yum:
+      apt:
         name: nodejs
         state: present
     - name: Install Expressjs
