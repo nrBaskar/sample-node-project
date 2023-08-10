@@ -1,2 +1,2 @@
 [stageserver]
-10.99.11.137 ansible_user=devsecops
+10.99.11.137 ansible_user=ec2-user
