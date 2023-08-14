@@ -1,6 +1,6 @@
 ---
 - name: Staging server Deployment
-  hosts: stageserver
+  hosts: pod
   become_user: root
   become: True
   vars:
