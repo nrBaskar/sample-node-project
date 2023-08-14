@@ -1,2 +1,2 @@
-[stageserver]
+[pod]
 10.99.12.28 ansible_user=ec2-user
